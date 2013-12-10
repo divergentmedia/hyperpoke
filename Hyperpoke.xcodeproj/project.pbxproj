@@ -18,6 +18,8 @@
 		3BFA9DA118567A6D00E8D495 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA9D8018567A6D00E8D495 /* Cocoa.framework */; };
 		3BFA9DA918567A6D00E8D495 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA9DA718567A6D00E8D495 /* InfoPlist.strings */; };
 		3BFA9DAB18567A6D00E8D495 /* HyperpokeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA9DAA18567A6D00E8D495 /* HyperpokeTests.m */; };
+		3BFA9DB51856806C00E8D495 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA9DB41856806C00E8D495 /* Preferences.xib */; };
+		711FEC7FE9E4434C83BB80FC /* libPods-Hyperpoke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6B956967C24AB8A52EC899 /* libPods-Hyperpoke.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F6B956967C24AB8A52EC899 /* libPods-Hyperpoke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hyperpoke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFA9D7D18567A6D00E8D495 /* Hyperpoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hyperpoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFA9D8018567A6D00E8D495 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3BFA9D8318567A6D00E8D495 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +53,8 @@
 		3BFA9DA618567A6D00E8D495 /* HyperpokeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HyperpokeTests-Info.plist"; sourceTree = "<group>"; };
 		3BFA9DA818567A6D00E8D495 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BFA9DAA18567A6D00E8D495 /* HyperpokeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HyperpokeTests.m; sourceTree = "<group>"; };
+		3BFA9DB41856806C00E8D495 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		6040D8E392DF480A875C37AD /* Pods-Hyperpoke.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hyperpoke.xcconfig"; path = "Pods/Pods-Hyperpoke.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFA9D8118567A6D00E8D495 /* Cocoa.framework in Frameworks */,
+				711FEC7FE9E4434C83BB80FC /* libPods-Hyperpoke.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,10 +82,12 @@
 		3BFA9D7418567A6D00E8D495 = {
 			isa = PBXGroup;
 			children = (
+				3BFA9DB41856806C00E8D495 /* Preferences.xib */,
 				3BFA9D8618567A6D00E8D495 /* Hyperpoke */,
 				3BFA9DA418567A6D00E8D495 /* HyperpokeTests */,
 				3BFA9D7F18567A6D00E8D495 /* Frameworks */,
 				3BFA9D7E18567A6D00E8D495 /* Products */,
+				6040D8E392DF480A875C37AD /* Pods-Hyperpoke.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +106,7 @@
 				3BFA9D8018567A6D00E8D495 /* Cocoa.framework */,
 				3BFA9D9F18567A6D00E8D495 /* XCTest.framework */,
 				3BFA9D8218567A6D00E8D495 /* Other Frameworks */,
+				1F6B956967C24AB8A52EC899 /* libPods-Hyperpoke.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BFA9DAE18567A6D00E8D495 /* Build configuration list for PBXNativeTarget "Hyperpoke" */;
 			buildPhases = (
+				126DBF80054F428FA040353F /* Check Pods Manifest.lock */,
 				3BFA9D7918567A6D00E8D495 /* Sources */,
 				3BFA9D7A18567A6D00E8D495 /* Frameworks */,
 				3BFA9D7B18567A6D00E8D495 /* Resources */,
+				A6AE3B50637A414B8718FEB1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +246,7 @@
 				3BFA9D9918567A6D00E8D495 /* Images.xcassets in Resources */,
 				3BFA9D9118567A6D00E8D495 /* Credits.rtf in Resources */,
 				3BFA9D9718567A6D00E8D495 /* MainMenu.xib in Resources */,
+				3BFA9DB51856806C00E8D495 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +259,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		126DBF80054F428FA040353F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6AE3B50637A414B8718FEB1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Hyperpoke-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BFA9D7918567A6D00E8D495 /* Sources */ = {
@@ -382,6 +427,7 @@
 		};
 		3BFA9DAF18567A6D00E8D495 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6040D8E392DF480A875C37AD /* Pods-Hyperpoke.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -395,6 +441,7 @@
 		};
 		3BFA9DB018567A6D00E8D495 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6040D8E392DF480A875C37AD /* Pods-Hyperpoke.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -465,6 +512,7 @@
 				3BFA9DB018567A6D00E8D495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BFA9DB118567A6D00E8D495 /* Build configuration list for PBXNativeTarget "HyperpokeTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +521,7 @@
 				3BFA9DB318567A6D00E8D495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
